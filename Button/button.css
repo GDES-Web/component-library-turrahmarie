@@ -1,0 +1,28 @@
+/* Base Styles */
+.btn {
+    font-family: century;
+    margin: 0 auto;
+    padding: 8px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Hover State */
+.btn:hover {
+    background-color: #733835;
+    box-shadow: 0 0 5px;
+    color: whitesmoke;
+}
+
+/* Active State */
+.btn:active {
+    background-color: #a25f5b;
+    transform: translateY(1px);
+}
