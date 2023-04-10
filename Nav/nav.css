@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: none;
+    background-color: #733835;
+    font-family: cursive;
+}
+
+.logo {
+    width: 110px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+}
