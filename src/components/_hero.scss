@@ -1,0 +1,71 @@
+.hero-container {
+    background-image: url(/public/images/cam\ 3.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 40rem;
+    height: auto;
+    width: 100%;
+    color: $cream;
+    display: flex;
+
+    .hero-overlay {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* if you dont want this centered remove justify and align item */
+        align-items: center;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        gap: 2rem;
+        padding: 11rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-title {
+        font-size: 7rem;
+        font-family: $primary-font;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .hero-sub {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2.75rem;
+        font-weight: 200;
+        max-width: 60rem;
+    }
+
+    .btn-hero {
+        width: fit-content;
+        font-size: 2.25rem;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+    .hero-container {
+
+        .hero-overlay {
+            padding: 5rem;
+        }
+
+        .hero-title {
+            font-size: 6rem;
+        }
+
+        .hero-sub {
+            font-size: 2rem;
+        }
+
+        .btn-hero {
+            font-size: 2rem;
+        }
+    }
+}

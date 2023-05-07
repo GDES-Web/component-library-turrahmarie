@@ -1,0 +1,31 @@
+* {
+    font-family: $primary-font;
+    color: $cream;
+}
+
+.breadcrumb {
+    display: flex;
+    font-size: 3rem;
+    padding: 0 .5rem;
+    align-items: center;
+    background-color: $mauve;
+    height: 5rem;
+}
+
+.breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a:hover {
+        color: $dustyrose;
+    }
+}
+
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .25rem;
+    content: "→";
+}
