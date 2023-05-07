@@ -5,32 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e14e6cb2ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <nav>
-        <div>
-            <ul class="navbar">
-                <button class="logo-btn">
-                </button>
-                <button class="nav-btn btn-default nav-btn-menu">
-                    Home
-                </button>
-                <button class="nav-btn btn-default nav-btn-menu">
-                    Projects
-                </button>
-                <button type="button" class="nav-btn btn-default nav-btn-menu">
-                    About
-                </button>
-                <button type="button" class="nav-btn btn-default nav-btn-menu">
-                    Contact
-                </button>
+    <header>
+        <nav class="navbar">
+            <a href="#"><img class="nav-logo" src="/public/images/logoipsum-273.svg" alt=""></a>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><button class="btn linen btn-nav">Contact</button></li>
             </ul>
-        </div>
-    </nav>
 
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
+        </nav>
+
+        <nav class="dropdown-nav">
+            <ul role="list" class="dropdown-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><button class="btn btn-dropdown">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="overlay" class="overlay"></div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = document.querySelector('.toggle-btn i');
+        const dropdownNav = document.querySelector('.dropdown-nav');
+        const overlay = document.querySelector('.overlay');
+
+        toggleBtn.onclick = function () {
+            dropdownNav.classList.toggle('open');
+            overlay.classList.toggle('open');
+            const isOpen = dropdownNav.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen ? 'fa fa-times' : 'fa-solid fa-bars';
+        };
+
+        function toggleOverlay() {
+            var overlay = document.getElementById("overlay");
+            if (overlay.style.display === "block") {
+                overlay.style.display = "none";
+            } else {
+                overlay.style.display = "block";
+            }
+        }
+
+    </script>
 </body>
 
 </html>

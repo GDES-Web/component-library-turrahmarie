@@ -1,34 +1,73 @@
 /* Global styles for all buttons */
 .btn {
-    font-size: 16px;
-    padding: 8px 16px;
-    border-radius: 4px;
+    font: 2rem 'Tangerine', Arial, sans-serif;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: fit-content;
     border: none;
     cursor: pointer;
+    transition: 0.5s;
+
+    &:active {
+        transform: translateY(4px);
+    }
 }
 
-/* Styles for the default button */
+/* Styles for buttons */
 .btn-default {
-    background-color: #9d5253;
-    color: #fff;
+    background-color: $blush;
+    color: $mauve;
+
+    &:hover {
+        background-color: $cream;
+        color: $peach;
+    }
+
+    &:active {
+        background-color: $dustyrose;
+    }
 }
 
-/* Styles for the active button */
-.btn-active {
-    background-color: #0056b3;
-    color: #fff;
+.btn-outline-default {
+    background-color: transparent;
+    color: $mauve;
+
+    &:hover {
+        background-color: $cream;
+        color: $peach;
+    }
+
+    &:active {
+        background-color: $dustyrose;
+    }
 }
 
-/* Styles for the hover button */
-.btn-hover:hover {
-    background-color: #0056b3;
-    color: #fff;
+.btn-lg {
+    background-color: $blush;
+    color: $mauve;
+    padding: 20px 40px;
+
+    &:hover {
+        background-color: $cream;
+        color: $peach;
+    }
+
+    &:active {
+        background-color: $dustyrose;
+    }
 }
 
-/* Styles for the inactive button */
-.btn-inactive {
-    background-color: #ccc;
-    color: #666;
-    cursor: default;
-    pointer-events: none;
+.btn-sm {
+    background-color: $blush;
+    color: $mauve;
+    padding: 5px 10px;
+
+    &:hover {
+        background-color: $cream;
+        color: $peach;
+    }
+
+    &:active {
+        background-color: $dustyrose;
+    }
 }

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+html {
+    font-size: 8px;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
