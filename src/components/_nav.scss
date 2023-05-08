@@ -96,9 +96,10 @@ header {
         align-items: center;
         list-style: none;
         gap: 1.5rem;
-        padding: 6rem;
+        padding: 6rem 0rem;
         width: 100%;
         height: inherit;
+        max-height: 40px;
 
         a {
             color: $cream;
@@ -112,11 +113,16 @@ header {
     .btn-dropdown {
         font-size: 2.5rem;
         width: 100%;
+
+        &:hover {
+            background-color: $cream;
+            color: $peach;
+        }
     }
 }
 
 @media only screen and (max-width: $breakpoint-tablet) {
-    .main-nav {
+    .navbar {
         padding: 0 5rem;
 
         .nav-list {

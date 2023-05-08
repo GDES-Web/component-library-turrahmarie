@@ -5,6 +5,7 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 
@@ -19,6 +20,11 @@ html:focus-within {
 body {
     text-rendering: optimizeSpeed;
     line-height: 1;
+}
+
+ul[role="list"],
+ol[role="list"] {
+    list-style-type: none;
 }
 
 a {

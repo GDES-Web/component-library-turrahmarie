@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e14e6cb2ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#"><img class="nav-logo" src="/public/images/logoipsum-273.svg" alt=""></a>
+            <ul role="list" class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><button class="btn linen btn-nav">Contact</button></li>
+            </ul>
+
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <nav class="dropdown-nav">
+            <ul role="list" class="dropdown-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><button class="btn btn-dropdown">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="overlay" class="overlay"></div>
+
+
+    <div class="hero-container">
+        <div class="hero-overlay">
+            <h2 class="hero-title">
+                This is a title!
+            </h2>
+            <p class="hero-sub">
+                This is a subtitle! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn btn-hero">This is a button!</button>
+        </div>
+    </div>
+
+    <section id="card-one">
+
+        <div class="container">
+            <div class="card-stlye-one primary">
+                <div class="card-overlay">
+                    <p>Card One</p>
+                </div>
+            </div>
+            <div class="card-stlye-one secondary">
+                <div class="card-overlay">
+                    <p>Card Two</p>
+                </div>
+            </div>
+            <div class="card-stlye-one third">
+                <div class="card-overlay">
+                    <p>Card Three</p>
+                </div>
+            </div>
+
+    </section>
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = document.querySelector('.toggle-btn i');
+        const dropdownNav = document.querySelector('.dropdown-nav');
+        const overlay = document.querySelector('.overlay');
+
+        toggleBtn.onclick = function () {
+            dropdownNav.classList.toggle('open');
+            overlay.classList.toggle('open');
+            const isOpen = dropdownNav.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen ? 'fa fa-times' : 'fa-solid fa-bars';
+        };
+
+        function toggleOverlay() {
+            var overlay = document.getElementById("overlay");
+            if (overlay.style.display === "block") {
+                overlay.style.display = "none";
+            } else {
+                overlay.style.display = "block";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
