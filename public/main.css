@@ -223,19 +223,15 @@ select {
   transition: opacity 0.3s ease-in-out;
 }
 .card-style-two .card-overlay p {
-  color: red;
+  color: #eee4db;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
   padding: 0 1rem;
 }
-
-.btn {
-  box-shadow: 0px 9px 20px 0px rgba(151, 77, 60, 0.31);
-}
-.btn:hover {
-  background-color: #3e8e41;
+.card-style-two .btn-card:hover {
+  background-color: #915858;
 }
 
 .hero-container {
@@ -250,7 +246,6 @@ select {
   display: flex;
 }
 .hero-container .hero-overlay {
-  display: flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,6 +278,11 @@ select {
 .hero-container .btn-hero {
   width: fit-content;
   font-size: 2.25rem;
+  background-color: #915858;
+}
+.hero-container .btn-hero:hover {
+  background-color: #eee4db;
+  color: #d8ae9c;
 }
 
 @media only screen and (max-width: 768px) {
@@ -297,6 +297,7 @@ select {
   }
   .hero-container .btn-hero {
     font-size: 2rem;
+    background-color: #915858;
   }
 }
 /* CSS for desktop view */

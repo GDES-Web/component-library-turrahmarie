@@ -11,7 +11,6 @@
 
     .hero-overlay {
         display: flex;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         /* if you dont want this centered remove justify and align item */
@@ -46,8 +45,15 @@
     .btn-hero {
         width: fit-content;
         font-size: 2.25rem;
+        background-color: $mauve;
+
+        &:hover {
+            background-color: $cream;
+            color: $peach;
+        }
     }
 }
+
 
 @media only screen and (max-width: $breakpoint-tablet) {
     .hero-container {
@@ -66,6 +72,7 @@
 
         .btn-hero {
             font-size: 2rem;
+            background-color: $mauve;
         }
     }
 }
