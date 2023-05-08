@@ -1,1 +1,60 @@
-$white: #ffddff;
+$cream: #eee4db;
+$blush: #e6d0ca;
+$peach: #d8ae9c;
+$rose: #ce9c90;
+$dustyrose: #a6776a;
+$mauve: #915858;
+
+$primary-font: 'Tangerine', Arial, sans-serif;
+
+
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Define breakpoints
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-extra-large: 1200px;
+
+// Define responsive styles
+// Small screens
+@media only screen and (max-width: $breakpoint-small) {
+
+    // Add your styles here
+    // For example:
+    body {
+        font-size: 16px;
+    }
+}
+
+// Medium screens
+@media only screen and (min-width: $breakpoint-medium) {
+
+    // Add your styles here
+    // For example:
+    body {
+        font-size: 18px;
+    }
+}
+
+// Large screens
+@media only screen and (min-width: $breakpoint-large) {
+
+    // Add your styles here
+    // For example:
+    body {
+        font-size: 20px;
+    }
+}
+
+// Extra-large screens
+@media only screen and (min-width: $breakpoint-extra-large) {
+
+    // Add your styles here
+    // For example:
+    body {
+        font-size: 22px;
+    }
+}
